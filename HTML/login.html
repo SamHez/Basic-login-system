@@ -1,0 +1,71 @@
+<!Doctype html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
+<title>Basic login system</title>
+
+
+
+
+
+<script>
+
+window.onload=alert("Username is your name and\npassword is your name followed by @123!");
+function validate()
+{
+  var user,pass;
+  user=document.getElementById("username").value;
+  pass=document.getElementById("password").value;
+  password=user+"@123";
+  if(user=="" || password=="")
+  {
+   alert("Both the fields are requried!");
+   return;
+  }
+  if(!(isNaN(user)))
+  {
+   alert("Username can't contain any numbers or special characters!");
+   return;
+  }
+  if(pass==password)
+  {
+   document.write("<center><h1>Successfully logged in, " + user);
+   document.write("</h1><br><br><a href='login.html'>Logout</a></center>");
+  }
+  else
+  {
+   alert("Password not matching as per the instructions.\nPlease re-enter!");
+    return;
+  }
+}
+
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+  <center>
+  <div id="main">
+  <div id="heading">
+<h1>Login System</h1>
+  </div>
+  <div id="login">
+  <form name="frm">
+  <input type="text" id="username" placeholder="Username" autofocus>
+  <br>
+  <input type="password" id="password" placeholder="Password">
+  <br><br>
+  <button type="button" id="submit" onClick="validate()">Submit</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="reset" id="reset">Reset</button>
+  </div>
+  </div>
+  </center> 
+  </body>
+</html>

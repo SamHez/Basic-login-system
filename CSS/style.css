@@ -1,0 +1,85 @@
+html
+{
+margin=0;
+padding=0;
+}
+body
+{
+background:radial-gradient(silver,lightgreen);
+}
+#heading
+{
+font-family:jokerman;
+text-decoration:underline;
+color:darkblue;
+font-size:35px;
+}
+#heading:hover
+{
+ -webkit-transition-duration:0.4s;
+ color:maroon;
+ font-family:cooper;
+}
+#login
+{
+ margin-top:10px;
+ padding:25px;
+ border:solid 3px purple;
+}
+#main
+{
+padding:50px 50px;
+border:dashed 5px red;
+width:460px;
+background:linear-gradient(magenta,green,skyblue);
+}
+form>input
+{
+ padding:10px 50px;
+ border-radius:10px;
+ font-size:30px;
+}
+form>button
+{
+ font-size:30px;
+ background:rgba(18,230,50,0.9);
+ border-width:5px;
+ border-color:rgba(255,255,255,0.8);
+ border-radius:8px;
+ padding:5px 15px;
+ color:white;
+}
+form>button[type="reset"]:hover
+{
+ -webkit-transition-duration:0.4s;
+ background:rgba(255,255,255,0.5);
+ color:purple;
+ cursor:pointer;
+ padding:15px 5px;
+ border-color:magenta;
+}
+form>button[type="button"]:hover
+ {
+  -webkit-transition-duration:0.4s;
+  background:rgba(255,255,255,0.5);
+  color:purple;
+  cursor:pointer;
+  padding:15px 5px;
+  border-color:magenta;
+ }
+ form>button:focus
+ {
+  -webkit-transform:translateY(8px);
+ }
+form>input:hover
+ {
+  -webkit-transition-duration:0.4s;
+  border-width:4px;
+  -webkit-transform:rotateY(360deg);
+ }
+ form>input:focus
+  {
+  -webkit-transition-duration:0.4s;
+  border-width:4px;
+  border-color:green;
+  }
