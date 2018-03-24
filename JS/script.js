@@ -1,13 +1,13 @@
-window.onload=alert("Username is your name and\npassword is your name followed by @123!");
+window.onload = alert("Username is your name and\npassword is your name followed by @123!");
 
 const button = document.getElementById('btn');
 
 button.addEventListener('click', () => {
-  let user,pass;
+  let user, pass;
   user = document.getElementById("username").value;
   pass = document.getElementById("password").value;
   password = user + "@123";
-  if(user=="" || password==""){
+  if(user == "" || password == ""){
    alert("Both the fields are requried!");
    return;
   }
