@@ -1,0 +1,86 @@
+*{
+	outline: none;
+	padding: none;
+	margin: none;
+}
+
+body{
+	width: 100%;
+	background-color: #ccc;
+}
+
+#wrapper{
+	padding: 20px;
+	width: 35%;
+	height: 400px;
+	background-color: #fff;
+	margin: 150px auto;
+	border: 3px solid #293;
+	border-radius: 6px;
+	text-align: center;
+	transition: all 0.7s ease-in-out
+}
+
+#wrapper:hover{
+	transform: scale3d(1.10, 1.10, 1.10);
+	box-shadow: 2px 2px grey;
+}
+
+#wrapper>h1{
+	color: #293;
+	text-shadow: 2px 2px #ddd;
+	font-size: 4em;
+	font-family: monospace;
+}
+
+input{
+	padding: 5px;
+	width: 75%;
+	font-size: 2em;
+	border: none;
+	border-bottom: 1px solid #293;
+	margin: 4px;
+	background-color: rgba(255, 255, 255, 0.75);
+	transition: all 0.4s ease-in-out;
+}
+
+input:focus{
+	border-left: 2px solid forestgreen;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+button{
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 28px;
+	width: 80%;
+	transition: all 0.4s ease-in-out;
+}
+
+button[type="button"]{
+	background-color: #293;
+	color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+}
+
+button[type="reset"]{
+	cursor: pointer;
+	background-color: #832;
+	color: #fff;
+	border-color: #fff;
+}
+
+button:hover{
+	background-color: #fff;
+	color: #293;
+	border-color: #fff;
+	box-shadow: 2px 2px #ccc;
+}
+
+button[type="reset"]:hover{
+	background-color: #fff;
+	color: #832;
+	border-color: #fff;
+}
