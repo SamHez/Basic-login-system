@@ -1,5 +1,5 @@
 window.onload = alert("Username is your name and\npassword is your name followed by @123!");
-validate: function(){
+() => {
   let user, pass;
   user = document.getElementById("username").value;
   pass = document.getElementById("password").value;
