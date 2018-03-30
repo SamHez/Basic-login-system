@@ -6,7 +6,8 @@
 
 body{
 	width: 100%;
-	background-color: #ccc;
+	background-color: #E5E5E5;
+	overflow: hidden;
 }
 
 #wrapper{
@@ -15,10 +16,13 @@ body{
 	height: 400px;
 	background-color: #fff;
 	margin: 150px auto;
-	border: 3px solid #293;
+	border: 3px solid #34495e;
 	border-radius: 6px;
 	text-align: center;
-	transition: all 0.7s ease-in-out
+	transition: all 0.7s ease-in-out;
+	-webkit-box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.4);
+	-moz-box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.4);
+	box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.4);
 }
 
 #wrapper:hover{
@@ -59,7 +63,7 @@ button{
 }
 
 button[type="button"]{
-	background-color: #293;
+	background-color: #2ecc71;
 	color: #fff;
 	border-color: #fff;
 	cursor: pointer;
@@ -67,7 +71,7 @@ button[type="button"]{
 
 button[type="reset"]{
 	cursor: pointer;
-	background-color: #832;
+	background-color: #34495e;
 	color: #fff;
 	border-color: #fff;
 }
